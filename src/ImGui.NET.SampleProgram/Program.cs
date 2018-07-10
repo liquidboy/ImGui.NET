@@ -111,6 +111,9 @@ namespace ImGuiNET
                 ImGuiNative.igShowDemoWindow(ref _showDemoWindow);
             }
 
+            JF.UI.Controls.ToggleButton(JF.UI.PipelineState.toggle1_Name, ref JF.UI.PipelineState.toggle1_Checked, JF.UI.PipelineState.toggle1_RoundedCorners);
+            JF.UI.Controls.ToggleButton(JF.UI.PipelineState.toggle2_Name, ref JF.UI.PipelineState.toggle2_Checked, JF.UI.PipelineState.toggle2_RoundedCorners);
+
             if (_showMemoryEditor)
             {
                 _memoryEditor.Draw("Memory Editor", _memoryEditorData, _memoryEditorData.Length, ref _showMemoryEditor);

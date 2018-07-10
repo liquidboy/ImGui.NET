@@ -34,6 +34,11 @@ namespace ImGuiNET
             ImGuiNative.ImDrawList_AddRectFilled(_nativeDrawList, a, b, color, rounding, rounding_corners);
         }
 
+        public void AddCircleFilled(Vector2 center, float radius, uint color, int num_segments = 12)
+        {
+            ImGuiNative.ImDrawList_AddCircleFilled(_nativeDrawList, center, radius, color, num_segments);
+        }
+
         public void AddRectFilledMultiColor(
             Vector2 a,
             Vector2 b,
